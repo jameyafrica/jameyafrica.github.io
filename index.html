@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamey Africa | Software Engineering Student</title>
+<meta name="description" content="Portfolio of Jamey Africa, software engineering student at WeThinkCode_ building mobile, backend and cloud projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0720;--panel:#241d45;--pink:#f22aa5;--blush:#ffc8e8;--lilac:#b9a3ee;--mint:#55f08a;--butter:#ffe14d;--text:#2a0f3b}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--blush);font:22px/1.25 'VT323',monospace;min-height:100vh;
+background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff8,transparent),radial-gradient(1.5px 1.5px at 90px 120px,#b9a3ee99,transparent),radial-gradient(2px 2px at 160px 60px,#ffe14d88,transparent);background-size:200px 160px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 20px 40px}
+.px{font-family:'Press Start 2P',monospace}
+.bar{display:flex;justify-content:space-between;font-size:10px;color:var(--mint);padding:4px 0 16px}
+.win{background:var(--blush);color:var(--text);border:3px solid #000;box-shadow:6px 6px 0 var(--pink)}
+.win>h2,.win>h3{background:var(--pink);color:#fff;font:11px/1 'Press Start 2P',monospace;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:3px solid #000}
+.win>h2::after,.win>h3::after{content:"_ \25A1 x";letter-spacing:4px;background:var(--blush);color:#000;padding:3px 6px;border:2px solid #000;font-size:9px;white-space:nowrap}
+.body{padding:16px 18px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--panel);border:3px solid #000;box-shadow:6px 6px 0 var(--pink);padding:28px}
+#av{width:190px;height:190px;background:#2c2552;border:4px solid #000;box-shadow:5px 5px 0 var(--pink);image-rendering:pixelated}
+.hero h1{font:clamp(26px,5.6vw,50px)/1.2 'Press Start 2P',monospace;color:var(--pink);text-shadow:3px 3px 0 #000,0 0 18px #f22aa588;margin:10px 0 14px}
+.hero .tag{color:var(--butter);font-size:10px}
+.hero p{color:var(--lilac);font-size:26px;max-width:34ch}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;text-decoration:none;font:11px/1 'Press Start 2P',monospace;padding:14px 16px;border:3px solid #000;box-shadow:4px 4px 0 #000;background:var(--mint);color:#000}
+.btn.alt{background:var(--blush)}
+.btn:hover,.btn:focus-visible{transform:translate(2px,2px);box-shadow:2px 2px 0 #000;outline:none}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+.grid{display:grid;gap:26px;margin-top:34px}
+.two{grid-template-columns:1fr 1fr}
+.sec{font:clamp(14px,2.6vw,20px)/1.3 'Press Start 2P',monospace;color:var(--mint);margin:46px 0 22px;text-shadow:0 0 12px #55f08a66}
+.job{margin-bottom:14px}
+.job b{display:block;color:var(--pink);font:10px/1.5 'Press Start 2P',monospace}
+.job span{font-size:24px}
+.job small{display:block;font-size:21px;opacity:.85}
+.chips h4{font:9px/1.4 'Press Start 2P',monospace;color:var(--pink);margin:12px 0 6px}
+.chips h4:first-child{margin-top:0}
+.chip{display:inline-block;background:#fff;border:2px solid #000;padding:1px 8px;margin:0 6px 6px 0;font-size:21px}
+.quests{grid-template-columns:repeat(3,1fr)}
+.q .body{display:flex;flex-direction:column;gap:8px;height:100%}
+.q p{font-size:22px}
+.q .stack{color:#7a1d9a;font-size:20px}
+.q .st{font:8px/1.4 'Press Start 2P',monospace;background:var(--butter);border:2px solid #000;align-self:flex-start;padding:4px 6px}
+.q a.lk{margin-top:auto;font:9px/1.4 'Press Start 2P',monospace;color:var(--pink)}
+.q .note{font-size:19px;opacity:.8;margin-top:auto}
+.contact{display:flex;gap:14px;flex-wrap:wrap}
+footer{text-align:center;color:var(--lilac);font-size:18px;margin-top:44px}
+.blink{animation:b 1.1s steps(2) infinite}
+@keyframes b{50%{opacity:0}}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:left}#av{width:150px;height:150px}.two,.quests{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.blink{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar px"><span>CAPE TOWN, ZA</span><span>PLAYER 01</span></div>
+
+  <header class="hero">
+    <svg id="av" role="img" aria-label="Pixel art avatar placeholder"></svg>
+    <div>
+      <div class="tag px">A new developer appears</div>
+      <h1>Jamey<br>Africa</h1>
+      <p>Software engineering student. Mobile, backend and cloud. Former Head of Department.</p>
+      <div class="btns">
+        <a class="btn" href="#quests">View projects</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid two">
+    <section class="win" aria-labelledby="exp">
+      <h2 id="exp">experience_&amp;_education.exe</h2>
+      <div class="body">
+        <div class="job"><b>Software Engineering Diploma</b><span>WeThinkCode_</span><small>Expected 2027. Project-based, peer-led training in Java, Python and mobile.</small></div>
+        <div class="job"><b>Virtual Executive Assistant</b><span>Freelance, 2024 to now</span><small>Social media, website upkeep, calendars, invoicing and payroll for 2 clients.</small></div>
+        <div class="job"><b>Head of Department</b><span>Curro Holdings, 2021 to 2024</span><small>Led 6 staff and 600 learners. Curriculum, staff performance, daily operations.</small></div>
+        <div class="job"><b>Customer Service Representative</b><span>The Foschini Group, 2020 to 2021</span><small>Multi-channel support. Logged every interaction in the CRM.</small></div>
+        <div class="job"><b>Also</b><span>CodeGirls Cohort 6 · CS50 (Harvard / edX)</span></div>
+      </div>
+    </section>
+
+    <section class="win chips" aria-labelledby="tech">
+      <h2 id="tech">tech_stack.sys</h2>
+      <div class="body">
+        <h4>Languages</h4><span class="chip">Java</span><span class="chip">Python</span><span class="chip">Dart</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+        <h4>Mobile &amp; frontend</h4><span class="chip">Flutter</span><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">React</span><span class="chip">Figma</span>
+        <h4>Backend &amp; data</h4><span class="chip">Django</span><span class="chip">Node.js</span><span class="chip">REST APIs</span><span class="chip">JSON</span><span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">Supabase</span>
+        <h4>Cloud &amp; DevOps</h4><span class="chip">AWS Serverless</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Azure DevOps</span><span class="chip">Git &amp; GitHub</span><span class="chip">Linux</span>
+        <h4>Testing &amp; practice</h4><span class="chip">JUnit</span><span class="chip">Jest</span><span class="chip">OOP</span><span class="chip">Agile</span><span class="chip">TCP networking</span>
+      </div>
+    </section>
+  </div>
+
+  <h2 class="sec" id="quests">Select a quest</h2>
+  <div class="grid quests">
+    <article class="win q"><h3>fundazaka</h3><div class="body">
+      <p>Offline-first budgeting and financial-literacy app for gig workers and informal traders. Data stays on the device, encrypted with AES-256-CTR, with an optional biometric lock. 498 Jest tests. Presented at the FNB Hackathon, Oct 2026.</p>
+      <p class="stack">React Native · Expo · JavaScript · Supabase Auth</p>
+      <a class="lk" href="https://github.com/jameyafrica/fundazaka" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+    <article class="win q"><h3>microstep</h3><div class="body">
+      <p>Breaks any task into micro-steps and shows only the next one, with a built-in focus timer.</p>
+      <p class="stack">Dart · Flutter</p>
+      <a class="lk" href="https://github.com/jameyafrica/MicroStep" target="_blank" rel="noopener">View on GitHub</a></div></article>
+
+    <article class="win q"><h3>golf_tracker</h3><div class="body">
+      <p>Tracks your golf stats on your phone. Search for courses and log scores to each one.</p>
+      <p class="stack">Dart · Flutter</p></div></article>
+
+    <article class="win q"><h3>robot_world_server</h3><div class="body">
+      <p>Multi-client TCP server with a JSON command protocol and SQLite persistence. 300+ JUnit tests. Built in an Agile team with Docker and CI/CD.</p>
+      <p class="stack">Java · SQLite · JUnit</p>
+      <p class="note">Group project on my school's GitLab. Ask for a walkthrough.</p></div></article>
+
+    <article class="win q"><h3>code_clinic_tool</h3><div class="body">
+      <p>Java command-line tool that automates student programming workflows, with JUnit tests and code review.</p>
+      <p class="stack">Java · JUnit</p>
+      <p class="note">Group project on my school's GitLab. Ask for a walkthrough.</p></div></article>
+
+    <article class="win q"><h3>reading_&amp;_numeracy_app</h3><div class="body">
+      <span class="st">IN PROGRESS</span>
+      <p>A book library, quizzes and levels for ages 6 to 11, to help with youth literacy and numeracy.</p>
+      <p class="stack">Dart · Flutter · Figma</p></div></article>
+  </div>
+
+  <div class="grid two">
+    <section class="win" aria-labelledby="cc">
+      <h2 id="cc">side_quest.txt</h2>
+      <div class="body"><div class="job"><b>Founder, Cottage Coders</b><span>2026 to now</span>
+      <small>Short beginner-friendly videos on Instagram and TikTok. Starting with HTML and CSS, more stacks to come.</small></div></div>
+    </section>
+    <section class="win" id="contact" aria-labelledby="ct">
+      <h2 id="ct">contact.exe</h2>
+      <div class="body"><p style="margin-bottom:14px">Open to junior developer roles and internships.</p>
+      <div class="contact">
+        <a class="btn alt" href="https://www.linkedin.com/in/jamey-africa/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn alt" href="https://github.com/jameyafrica" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn alt" href="mailto:jameyafrica19@gmail.com">Email</a>
+        <a class="btn alt" href="https://www.instagram.com/cottagecoders" target="_blank" rel="noopener">Cottage Coders</a>
+      </div></div>
+    </section>
+  </div>
+
+  <footer>&copy; 2026 Jamey Africa<span class="blink">_</span></footer>
+</div>
+
+<script>
+// Pixel avatar placeholder: swap for your own art by replacing the <svg id="av"> with <img id="av" src="avatar.png" alt="...">
+(function(){
+  var rows=["...LLLLLL...","..LLLLLLLL..",".LLLPPPPLLL.",".LLPPPPPPLL.",".LLPKPPKPLL.",".LLPPPPPPLL.",".LLPRPPRPLL.","..LLPRRPLL..","...GGGGGG...","..GGGPPGGG..",".GGGGGGGGGG."];
+  var c={L:"#b9a3ee",P:"#ffd3ea",K:"#14091f",R:"#f22aa5",G:"#55f08a"},s="";
+  rows.forEach(function(r,y){for(var x=0;x<r.length;x++){var k=r[x];if(k!=="."){s+='<rect x="'+x+'" y="'+y+'" width="1.02" height="1.02" fill="'+c[k]+'"/>'}}});
+  var el=document.getElementById("av");el.setAttribute("viewBox","-1 -1.5 14 14");el.innerHTML=s;
+})();
+</script>
+</body>
+</html>
