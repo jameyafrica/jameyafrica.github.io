@@ -1,1 +1,1 @@
-# jameyafrica.github.io
+# jameyafrica.github.i
