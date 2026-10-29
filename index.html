@@ -51,6 +51,7 @@ a{color:inherit}
 .li{background:#fff;border:3px solid #000;box-shadow:5px 5px 0 var(--lilac);padding:22px;display:flex;flex-direction:column;gap:10px}
 .li h5{font:400 27px/1.1 'VT323',monospace;color:var(--text)}
 .li p{font-size:21px}
+.li:last-child:nth-child(odd){grid-column:1/-1}.bt{display:flex;gap:14px;flex-wrap:wrap;margin-top:auto}.bt .btn.sm{margin-top:0}
 .tg{align-self:flex-start;font:8px/1.4 'Press Start 2P',monospace;background:var(--butter);border:2px solid #000;padding:5px 7px;color:#000}
 .chips h4,.grp{font:9px/1.4 'Press Start 2P',monospace;color:var(--pink);margin:26px 0 12px}
 .chips h4:first-child,.grp:first-child{margin-top:0}
@@ -127,9 +128,9 @@ footer{text-align:center;color:var(--lilac);font-size:18px;margin-top:44px}
       <a class="btn sm" href="https://github.com/jameyafrica/MicroStep" target="_blank" rel="noopener">View on GitHub</a></div></article>
 
     <article class="win q"><h3>golf_scorecard</h3><div class="body">
-      <p>Mobile-first app for scoring a round on the course, offline. Records club, shot direction and a photo per hole, and keeps your round history on the device. Installable as a PWA.</p>
+      <p>Mobile-first app for scoring a round on the course, offline. Records club, shot direction and a photo per hole, and keeps your round history on the device. Installable as a PWA. A Django API to go with it is in progress.</p>
       <p class="stack">JavaScript · IndexedDB · Service Worker</p>
-      <a class="btn sm" href="https://github.com/jameyafrica/golf-scorecard-pwa" target="_blank" rel="noopener">View on GitHub</a></div></article>
+      <div class="bt"><a class="btn sm" href="https://github.com/jameyafrica/golf-scorecard-pwa" target="_blank" rel="noopener">View on GitHub</a><a class="btn sm" href="https://github.com/jameyafrica/golf-tracker-api" target="_blank" rel="noopener">API (in progress)</a></div></div></article>
 
     <article class="win q"><h3>robot_world_server</h3><div class="body">
       <p>Multi-client TCP server with a JSON command protocol and SQLite persistence. 300+ JUnit tests. Built in an Agile team with Docker and CI/CD.</p>
@@ -154,8 +155,12 @@ footer{text-align:center;color:var(--lilac);font-size:18px;margin-top:44px}
       <div class="learn">
         <div class="li"><span class="tg">Course</span><h5>CS50: Introduction to Computer Science</h5><p>Harvard / edX</p><!-- Add your certificate link: <a class="btn sm" href="YOUR-CERT-URL" target="_blank" rel="noopener">View certificate</a> --></div>
         <div class="li"><span class="tg">Course</span><h5>SheCodes Basics, Add-on and JavaScript</h5><p>HTML, CSS and JavaScript fundamentals.</p><a class="btn sm" href="https://github.com/jameyafrica/SheCodes-Portfolio" target="_blank" rel="noopener">See the work</a></div>
-        <div class="li"><span class="tg">Course</span><h5>Python and Java Masterclasses</h5><p>My public Java learning roadmap.</p><a class="btn sm" href="https://github.com/jameyafrica/Mastering-Java" target="_blank" rel="noopener">See the roadmap</a></div>
+        <div class="li"><span class="tg">Course</span><h5>Java Masterclass</h5><p>My public Java learning roadmap.</p><a class="btn sm" href="https://github.com/jameyafrica/Mastering-Java" target="_blank" rel="noopener">See the roadmap</a></div>
+        <div class="li"><span class="tg">Course</span><h5>Python Masterclass</h5><p>24 small Python projects, from a temperature converter to an async website checker, following Indently's 25 day challenge.</p><a class="btn sm" href="https://github.com/jameyafrica/25_day_challenge_projects" target="_blank" rel="noopener">See the projects</a></div>
+        <div class="li"><span class="tg">Self-study</span><h5>Dartpedia</h5><p>A Dart command-line app split into three packages: cli, command_runner and wikipedia.</p><a class="btn sm" href="https://github.com/jameyafrica/dartpedia" target="_blank" rel="noopener">See the code</a></div>
+        <div class="li"><span class="tg">Self-study</span><h5>Birdle</h5><p>A C++ project from my learning. Add one line on what it does.</p><a class="btn sm" href="https://github.com/jameyafrica/birdle" target="_blank" rel="noopener">See the code</a></div>
         <div class="li"><span class="tg">Self-built</span><h5>AWS serverless</h5><p>Study cards on a serverless stack, plus a Free-Tier Guardian CLI.</p><a class="btn sm" href="https://github.com/jameyafrica/Serverless-Study-Cards" target="_blank" rel="noopener">See the code</a></div>
+        <div class="li"><span class="tg">In progress</span><h5>Golf Tracker API</h5><p>A Django API for my golf scorecard app. Just started.</p><a class="btn sm" href="https://github.com/jameyafrica/golf-tracker-api" target="_blank" rel="noopener">See the code</a></div>
       </div>
     </div>
   </section>
